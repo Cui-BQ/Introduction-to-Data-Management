@@ -1,0 +1,30 @@
+a, R(A,B,C,D,E) with functional dependencies D → B, CE → A.
+    Since {D}+ = {D,B}, which violates the BCNF condition.
+    So, split R to R1(D,B), and R2(A,C,D,E).
+    Since {C,E}+ = {C,E,A}, so R2 violates the BCNF condition.
+    split R2 to R21(C,E,A), and R22(C,E,D).
+    Therefore, R1(D,B), R21(C,E,A), and R22(C,E,D).
+
+
+b, S(A,B,C,D,E) with functional dependencies A → E, BC → A, DE → B.
+    Since {A}+ = {A,E}, which violates the BCNF condition.
+    So, split S to S1(A,E) and S2(A,B,C,D).
+    Since {B,C}+ = {B,C,A}, so S2 violates the BCNF condition.
+    split S2 to S21(B,C,A), and S22(B,C,D).
+    Therefore, S1(A,E), S21(B,C,A), and S22(B,C,D).
+
+
+C, All subsets of {A,B,C,D} are closed.
+    Zero set.
+
+D, The only closed subsets of {A,B,C,D} are {} and {A,B,C,D}.
+    A → B, B → C, C → D, D → A
+
+E, The only closed subsets of {A,B,C,D} are {}, {B,C}, and {A,B,C,D}.
+    A → B, B → A, C → D, D → C, C → A, D → A
+
+
+
+
+    
+
