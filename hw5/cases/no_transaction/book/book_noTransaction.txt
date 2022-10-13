@@ -1,0 +1,22 @@
+# public_test_case
+# user attempt to book two flights on same day.
+#
+# user1's commands
+create user1 user1 100
+login user1 user1
+search "Minneapolis MN" "Newark NJ" 1 9 2
+book 0
+book 1
+quit
+#
+*
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 11 minutes
+ID: 434939 Day: 9 Carrier: XE Number: 2602 Origin: Minneapolis MN Dest: Newark NJ Duration: 11 Capacity: 1 Price: 490
+Itinerary 1: 1 flight(s), 144 minutes
+ID: 325537 Day: 9 Carrier: NW Number: 1090 Origin: Minneapolis MN Dest: Newark NJ Duration: 144 Capacity: 14 Price: 681
+Booked flight(s), reservation ID: 1
+You cannot book two flights in the same day
+Goodbye
+*

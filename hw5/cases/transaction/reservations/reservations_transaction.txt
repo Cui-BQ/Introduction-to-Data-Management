@@ -1,0 +1,57 @@
+# # public_test_case
+# fid 434939, from "Minneapolis MN" to "Newark NJ" has capacity = 1 
+# two users attempt to book this flight at same time, then lookup their reservations.
+#
+# user1's commands
+create user1 user1 100
+login user1 user1
+search "Minneapolis MN" "Newark NJ" 1 9 1
+book 0
+reservations
+quit
+#
+*
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 11 minutes
+ID: 434939 Day: 9 Carrier: XE Number: 2602 Origin: Minneapolis MN Dest: Newark NJ Duration: 11 Capacity: 1 Price: 490
+Booked flight(s), reservation ID: 1
+Reservation 1 paid: false:
+ID: 434939 Day: 9 Carrier: XE Number: 2602 Origin: Minneapolis MN Dest: Newark NJ Duration: 11 Capacity: 1 Price: 490
+Goodbye
+|
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 11 minutes
+ID: 434939 Day: 9 Carrier: XE Number: 2602 Origin: Minneapolis MN Dest: Newark NJ Duration: 11 Capacity: 1 Price: 490
+Booking failed
+No reservations found
+Goodbye
+*
+# 
+# user2's commands
+create user2 user2 200
+login user2 user2
+search "Minneapolis MN" "Newark NJ" 1 9 1
+book 0
+reservations
+quit
+#
+*
+Created user user2
+Logged in as user2
+Itinerary 0: 1 flight(s), 11 minutes
+ID: 434939 Day: 9 Carrier: XE Number: 2602 Origin: Minneapolis MN Dest: Newark NJ Duration: 11 Capacity: 1 Price: 490
+Booking failed
+No reservations found
+Goodbye
+|
+Created user user2
+Logged in as user2
+Itinerary 0: 1 flight(s), 11 minutes
+ID: 434939 Day: 9 Carrier: XE Number: 2602 Origin: Minneapolis MN Dest: Newark NJ Duration: 11 Capacity: 1 Price: 490
+Booked flight(s), reservation ID: 1
+Reservation 1 paid: false:
+ID: 434939 Day: 9 Carrier: XE Number: 2602 Origin: Minneapolis MN Dest: Newark NJ Duration: 11 Capacity: 1 Price: 490
+Goodbye
+*

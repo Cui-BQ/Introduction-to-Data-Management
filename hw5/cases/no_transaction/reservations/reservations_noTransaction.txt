@@ -1,0 +1,13 @@
+# user doesn't book any flight yet.
+#
+create user user 100
+login user user
+reservations
+quit
+#
+*
+Created user user
+Logged in as user
+No reservations found
+Goodbye
+*

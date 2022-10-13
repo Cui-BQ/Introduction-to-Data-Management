@@ -1,0 +1,10 @@
+# public_test_case
+# search when origin city = dest city
+#
+search "Seattle WA" "Seattle WA" 1 1 10
+quit
+*
+#
+# expected printouts
+Goodbye
+*

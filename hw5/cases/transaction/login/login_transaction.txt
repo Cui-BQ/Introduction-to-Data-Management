@@ -1,0 +1,29 @@
+# public_test_case
+# two terminals attempt to login the same user
+# 
+# create a user before test.
+create user user 10000
+#
+# Terminal 1
+login user user
+quit
+*
+Created user user
+Logged in as user
+Goodbye
+|
+Login failed
+Goodbye
+*
+#
+# Terminal 2
+login user user
+quit
+*
+Login failed
+Goodbye
+|
+Created user user
+Logged in as user
+Goodbye
+*

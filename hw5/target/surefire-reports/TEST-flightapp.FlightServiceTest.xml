@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="flightapp.FlightServiceTest" time="169.306" tests="41" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="test.cases" value="cases"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/homes/iws/boqiang/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M5/surefire-booter-3.0.0-M5.jar:/homes/iws/boqiang/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M5/surefire-api-3.0.0-M5.jar:/homes/iws/boqiang/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M5/surefire-logger-api-3.0.0-M5.jar:/homes/iws/boqiang/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M4/surefire-shared-utils-3.0.0-M4.jar:/homes/iws/boqiang/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M5/surefire-extensions-spi-3.0.0-M5.jar:/homes/iws/boqiang/344/hw5/target/test-classes:/homes/iws/boqiang/344/hw5/target/classes:/homes/iws/boqiang/.m2/repository/junit/junit/4.13/junit-4.13.jar:/homes/iws/boqiang/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/homes/iws/boqiang/.m2/repository/com/microsoft/sqlserver/mssql-jdbc/9.2.1.jre11/mssql-jdbc-9.2.1.jre11.jar:/homes/iws/boqiang/.m2/repository/org/mybatis/mybatis/3.5.7/mybatis-3.5.7.jar:/homes/iws/boqiang/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/homes/iws/boqiang/344/hw5/distributed.jar:/homes/iws/boqiang/.m2/repository/org/apache/maven/surefire/surefire-junit4/3.0.0-M5/surefire-junit4-3.0.0-M5.jar:/homes/iws/boqiang/.m2/repository/org/apache/maven/surefire/common-java5/3.0.0-M5/common-java5-3.0.0-M5.jar:/homes/iws/boqiang/.m2/repository/org/apache/maven/surefire/common-junit3/3.0.0-M5/common-junit3-3.0.0-M5.jar:/homes/iws/boqiang/.m2/repository/org/apache/maven/surefire/common-junit4/3.0.0-M5/common-junit4-3.0.0-M5.jar"/>
+    <property name="java.vm.vendor" value="Red Hat, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://www.redhat.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-11.0.9.11-3.el8_3.x86_64/lib"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /homes/iws/boqiang/344/hw5/target/surefire 2021-05-15T22-25-12_543-jvmRun1 surefire201093327688626116tmp surefire_06548378840293281048tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/homes/iws/boqiang/344/hw5/target/test-classes:/homes/iws/boqiang/344/hw5/target/classes:/homes/iws/boqiang/.m2/repository/junit/junit/4.13/junit-4.13.jar:/homes/iws/boqiang/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/homes/iws/boqiang/.m2/repository/com/microsoft/sqlserver/mssql-jdbc/9.2.1.jre11/mssql-jdbc-9.2.1.jre11.jar:/homes/iws/boqiang/.m2/repository/org/mybatis/mybatis/3.5.7/mybatis-3.5.7.jar:/homes/iws/boqiang/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/homes/iws/boqiang/344/hw5/distributed.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/homes/iws/boqiang"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-11-04"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-11.0.9.11-3.el8_3.x86_64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/homes/iws/boqiang/344/hw5"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.9.1+1-LTS"/>
+    <property name="user.name" value="boqiang"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.18.0-240.15.1.el8_3.x86_64"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/homes/iws/boqiang/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%208&amp;component=java-11-openjdk"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.9.1"/>
+    <property name="user.dir" value="/homes/iws/boqiang/344/hw5"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/opt/rh/gcc-toolset-9/root/usr/lib64:/opt/rh/gcc-toolset-9/root/usr/lib:/opt/rh/gcc-toolset-9/root/usr/lib64:/opt/rh/gcc-toolset-9/root/usr/lib:/opt/rh/gcc-toolset-9/root/usr/lib64:/opt/rh/gcc-toolset-9/root/usr/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Red Hat, Inc."/>
+    <property name="java.vm.version" value="11.0.9.1+1-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="runTest[0]" classname="flightapp.FlightServiceTest" time="10.896">
+    <system-out><![CDATA[running setup
+running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/cancel/cancel_others.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[1]" classname="flightapp.FlightServiceTest" time="7.835">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/cancel/cancel_transaction.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[2]" classname="flightapp.FlightServiceTest" time="6.373">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/book/book_sameItineraryTwice.txt
+passed
+]]></system-out>
+    <system-err><![CDATA[com.microsoft.sqlserver.jdbc.SQLServerException: Violation of PRIMARY KEY constraint 'PK__Users__F3DBC57372BEA279'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (user1).
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1632)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:602)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:524)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7418)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:247)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:222)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:473)
+	at flightapp.wrapper.TestPreparedStatementWrapper.executeUpdate(TestPreparedStatementWrapper.java:34)
+	at flightapp.Query.transaction_createCustomer(Query.java:226)
+	at flightapp.QueryAbstract.createCustomer(QueryAbstract.java:126)
+	at flightapp.FlightService.execute(FlightService.java:39)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:115)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:96)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+  </testcase>
+  <testcase name="runTest[3]" classname="flightapp.FlightServiceTest" time="7.818">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/book/book_2users2flights.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[4]" classname="flightapp.FlightServiceTest" time="7.377">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/book/book_transaction.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[5]" classname="flightapp.FlightServiceTest" time="7.466">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/book/book_2UsersSameFlight.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[6]" classname="flightapp.FlightServiceTest" time="2.542">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/create/create_concurrent.txt
+passed
+]]></system-out>
+    <system-err><![CDATA[com.microsoft.sqlserver.jdbc.SQLServerException: Violation of PRIMARY KEY constraint 'PK__Users__F3DBC57372BEA279'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (user1).
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1632)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:602)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:524)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7418)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:247)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:222)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:473)
+	at flightapp.wrapper.TestPreparedStatementWrapper.executeUpdate(TestPreparedStatementWrapper.java:34)
+	at flightapp.Query.transaction_createCustomer(Query.java:226)
+	at flightapp.QueryAbstract.createCustomer(QueryAbstract.java:126)
+	at flightapp.FlightService.execute(FlightService.java:39)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:115)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:96)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+  </testcase>
+  <testcase name="runTest[7]" classname="flightapp.FlightServiceTest" time="2.244">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/create/create_2UsersSameName.txt
+passed
+]]></system-out>
+    <system-err><![CDATA[com.microsoft.sqlserver.jdbc.SQLServerException: Violation of PRIMARY KEY constraint 'PK__Users__F3DBC57372BEA279'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (user).
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1632)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:602)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:524)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7418)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:247)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:222)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:473)
+	at flightapp.wrapper.TestPreparedStatementWrapper.executeUpdate(TestPreparedStatementWrapper.java:34)
+	at flightapp.Query.transaction_createCustomer(Query.java:226)
+	at flightapp.QueryAbstract.createCustomer(QueryAbstract.java:126)
+	at flightapp.FlightService.execute(FlightService.java:39)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:115)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:96)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+  </testcase>
+  <testcase name="runTest[8]" classname="flightapp.FlightServiceTest" time="4.035">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/search/search_multi.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[9]" classname="flightapp.FlightServiceTest" time="4.108">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/search/search_transaction.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[10]" classname="flightapp.FlightServiceTest" time="6.034">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/reservations/reservations_concurrent.txt
+passed
+]]></system-out>
+    <system-err><![CDATA[com.microsoft.sqlserver.jdbc.SQLServerException: Violation of PRIMARY KEY constraint 'PK__Users__F3DBC57372BEA279'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (user1).
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1632)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:602)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:524)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7418)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:247)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:222)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:473)
+	at flightapp.wrapper.TestPreparedStatementWrapper.executeUpdate(TestPreparedStatementWrapper.java:34)
+	at flightapp.Query.transaction_createCustomer(Query.java:226)
+	at flightapp.QueryAbstract.createCustomer(QueryAbstract.java:126)
+	at flightapp.FlightService.execute(FlightService.java:39)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:115)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:96)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+  </testcase>
+  <testcase name="runTest[11]" classname="flightapp.FlightServiceTest" time="6.098">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/reservations/reservations_transaction.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[12]" classname="flightapp.FlightServiceTest" time="7.388">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/pay/pay_transaction.txt
+passed
+]]></system-out>
+    <system-err><![CDATA[com.microsoft.sqlserver.jdbc.SQLServerException: Violation of PRIMARY KEY constraint 'PK__Users__F3DBC57372BEA279'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (user1).
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1632)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:602)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:524)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7418)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:247)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:222)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:473)
+	at flightapp.wrapper.TestPreparedStatementWrapper.executeUpdate(TestPreparedStatementWrapper.java:34)
+	at flightapp.Query.transaction_createCustomer(Query.java:226)
+	at flightapp.QueryAbstract.createCustomer(QueryAbstract.java:126)
+	at flightapp.FlightService.execute(FlightService.java:39)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:115)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:96)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+  </testcase>
+  <testcase name="runTest[13]" classname="flightapp.FlightServiceTest" time="3.991">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/pay/pay_wrongUser.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[14]" classname="flightapp.FlightServiceTest" time="2.324">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/login/login_transaction.txt
+passed
+]]></system-out>
+    <system-err><![CDATA[com.microsoft.sqlserver.jdbc.SQLServerException: The result set has no current row.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:234)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.verifyResultSetHasCurrentRow(SQLServerResultSet.java:540)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getterGetColumn(SQLServerResultSet.java:2023)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2054)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2040)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getBytes(SQLServerResultSet.java:2198)
+	at flightapp.Query.transaction_login(Query.java:180)
+	at flightapp.QueryAbstract.login(QueryAbstract.java:106)
+	at flightapp.FlightService.execute(FlightService.java:27)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:115)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:96)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+  </testcase>
+  <testcase name="runTest[15]" classname="flightapp.FlightServiceTest" time="2.284">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/transaction/login/login_multi.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[16]" classname="flightapp.FlightServiceTest" time="3.891">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/cancel/cancel_noTransaction.txt
+passed
+]]></system-out>
+    <system-err><![CDATA[com.microsoft.sqlserver.jdbc.SQLServerException: The result set has no current row.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:234)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.verifyResultSetHasCurrentRow(SQLServerResultSet.java:540)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getterGetColumn(SQLServerResultSet.java:2023)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2054)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getValue(SQLServerResultSet.java:2040)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getString(SQLServerResultSet.java:2511)
+	at flightapp.Query.transaction_cancel(Query.java:627)
+	at flightapp.QueryAbstract.cancel(QueryAbstract.java:270)
+	at flightapp.FlightService.execute(FlightService.java:92)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:115)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:96)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+  </testcase>
+  <testcase name="runTest[17]" classname="flightapp.FlightServiceTest" time="4.533">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/cancel/cancel_twice.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[18]" classname="flightapp.FlightServiceTest" time="4.636">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/cancel/cancel_basic.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[19]" classname="flightapp.FlightServiceTest" time="3.668">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/book/book_basic.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[20]" classname="flightapp.FlightServiceTest" time="1.92">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/book/book_noSearch.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[21]" classname="flightapp.FlightServiceTest" time="4.451">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/book/book_noTransaction.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[22]" classname="flightapp.FlightServiceTest" time="3.242">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/book/book_withoutLogIn.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[23]" classname="flightapp.FlightServiceTest" time="4.286">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/pay/pay_basic.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[24]" classname="flightapp.FlightServiceTest" time="3.724">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/pay/pay_noTransactions.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[25]" classname="flightapp.FlightServiceTest" time="5.196">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/pay/pay_already.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[26]" classname="flightapp.FlightServiceTest" time="4.06">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/pay/pay_insufficient.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[27]" classname="flightapp.FlightServiceTest" time="1.952">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/reservations/reservations_noTransaction.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[28]" classname="flightapp.FlightServiceTest" time="4.244">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/reservations/reservations_same_day.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[29]" classname="flightapp.FlightServiceTest" time="3.607">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/reservations/reservations_basic.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[30]" classname="flightapp.FlightServiceTest" time="2.212">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/search/search_basic.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[31]" classname="flightapp.FlightServiceTest" time="5.1">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/search/search_topk.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[32]" classname="flightapp.FlightServiceTest" time="1.957">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/search/search_noTransaction.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[33]" classname="flightapp.FlightServiceTest" time="2.081">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/search/search_lessThanN.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[34]" classname="flightapp.FlightServiceTest" time="1.817">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/login/login_wrongPassword.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[35]" classname="flightapp.FlightServiceTest" time="2.432">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/login/login_already.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[36]" classname="flightapp.FlightServiceTest" time="1.934">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/login/login_noTransaction.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[37]" classname="flightapp.FlightServiceTest" time="1.866">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/login/login_single.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[38]" classname="flightapp.FlightServiceTest" time="2.212">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/create/create_noTransaction.txt
+passed
+]]></system-out>
+    <system-err><![CDATA[com.microsoft.sqlserver.jdbc.SQLServerException: Violation of PRIMARY KEY constraint 'PK__Users__F3DBC57372BEA279'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (user1).
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1632)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:602)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:524)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7418)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:247)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:222)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:473)
+	at flightapp.wrapper.TestPreparedStatementWrapper.executeUpdate(TestPreparedStatementWrapper.java:34)
+	at flightapp.Query.transaction_createCustomer(Query.java:226)
+	at flightapp.QueryAbstract.createCustomer(QueryAbstract.java:126)
+	at flightapp.FlightService.execute(FlightService.java:39)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:115)
+	at flightapp.FlightServiceTest$User.call(FlightServiceTest.java:96)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+  </testcase>
+  <testcase name="runTest[39]" classname="flightapp.FlightServiceTest" time="1.188">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/create/create_negativeInitialAmount.txt
+passed
+]]></system-out>
+  </testcase>
+  <testcase name="runTest[40]" classname="flightapp.FlightServiceTest" time="1.589">
+    <system-out><![CDATA[running test scenario: /homes/iws/boqiang/344/hw5/cases/no_transaction/create/create_basic.txt
+passed
+]]></system-out>
+  </testcase>
+</testsuite>

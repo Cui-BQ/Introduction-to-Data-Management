@@ -1,0 +1,12 @@
+# public_test_case
+# create a single user and create this user with the same user's info again
+create user1 user1 100
+create user1 user1 100
+quit 
+*
+#
+Created user user1
+Failed to create user
+Goodbye
+#
+*
