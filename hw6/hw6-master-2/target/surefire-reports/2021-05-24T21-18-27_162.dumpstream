@@ -1,0 +1,15 @@
+# Created at 2021-05-24T21:18:28.444
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2021-05-24T21:18:28.445
+WARNING: Illegal reflective access by org.apache.hadoop.security.authentication.util.KerberosUtil (file:/homes/iws/boqiang/.m2/repository/org/apache/hadoop/hadoop-auth/2.9.2/hadoop-auth-2.9.2.jar) to method sun.security.krb5.Config.getInstance()
+
+# Created at 2021-05-24T21:18:28.446
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.security.authentication.util.KerberosUtil
+
+# Created at 2021-05-24T21:18:28.446
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2021-05-24T21:18:28.447
+WARNING: All illegal access operations will be denied in a future release
+
